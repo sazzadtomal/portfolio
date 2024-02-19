@@ -36,7 +36,7 @@ const Hero = ({setView}:Props) => {
         transition={{staggerChildren:0.075}}
         className="text-3xl md:text-5xl font-semibold tracking-wider backface-invisible "
         >
-          {StaggeredText("Sazzad Alam Tomal",15,"slide-in")}
+          {StaggeredText("Sazzad Alam Tomal","slide-in")}
         </motion.h1>
         <motion.h2
         className="relative z-30 text-sm md:text-lg"
