@@ -1,5 +1,6 @@
 import { useScroll,motion,useTransform,AnimatePresence} from "framer-motion"
-import StaggeredText from "./Utilities/StaggeredText"
+import StaggeredText from "../Utilities/StaggeredText"
+import { NavLink } from "react-router-dom"
 
 interface Props{
   showName:boolean
@@ -32,15 +33,17 @@ const Navbar = ({showName}:Props) => {
       </motion.div>
       
         <motion.ul className='flex flex-grow justify-center [&>*]:px-6 p-2'>
+          <NavLink to="/">
+            <motion.li
+            initial={{opacity:0,x:-5,y:-10}}
+            animate={{opacity:1,x:0,y:0}} transition={{duration:1,delay:0.5}}>Home</motion.li>
+          </NavLink>
           <motion.li
           initial={{opacity:0,x:-5,y:-10}}
-          animate={{opacity:1,x:0,y:0}} transition={{duration:1,delay:1}}>Home</motion.li>
+          animate={{opacity:1,x:0,y:0}} transition={{duration:1,delay:0.75}}><NavLink to="/projects">Projects</NavLink></motion.li>
           <motion.li
           initial={{opacity:0,x:-5,y:-10}}
-          animate={{opacity:1,x:0,y:0}} transition={{duration:1,delay:1.25}}>Projects</motion.li>
-          <motion.li
-          initial={{opacity:0,x:-5,y:-10}}
-          animate={{opacity:1,x:0,y:0}} transition={{duration:1,delay:1.50}}>About</motion.li>
+          animate={{opacity:1,x:0,y:0}} transition={{duration:1,delay:1}}><NavLink to="/about">About</NavLink></motion.li>
         </motion.ul>
 
         <AnimatePresence>
@@ -51,7 +54,7 @@ const Navbar = ({showName}:Props) => {
            variants={animation}
            transition={{staggerChildren:0.03,duration:0.5}}
            className="absolute pl-8 hidden md:block">
-           {StaggeredText("Sazzad Alam Tomal",5)}
+           {StaggeredText("Sazzad Alam Tomal","slide-in")}
             
           </motion.h1>}
         </AnimatePresence>

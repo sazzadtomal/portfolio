@@ -1,7 +1,7 @@
 import {motion,useInView} from "framer-motion"
 import HeroAnimation from "./HeroAnimation";
 import { useEffect, useRef,memo } from "react";
-import StaggeredText from "./Utilities/StaggeredText";
+import StaggeredText from "../Utilities/StaggeredText";
 
 
 
@@ -28,15 +28,15 @@ const Hero = ({setView}:Props) => {
 
 
   return (
-    <motion.section  className="relative w-full h-[75vh] text-center flex gap-4 flex-col  mx-auto mt-8 bg-[#2E3138] background justify-center items-center overflow-hidden mb-16">
+    <motion.section  className="relative w-full  h-[80vh] lg:h-[75vh] text-center flex gap-4 flex-col  mx-auto mt-8 bg-[#2E3138] background justify-center items-center mb-16">
  
         <motion.h1 ref={ref}
         initial="hidden"
         animate="show"
         transition={{staggerChildren:0.075}}
-        className="text-3xl md:text-5xl font-semibold tracking-wider"
+        className="text-3xl md:text-5xl font-semibold tracking-wider backface-invisible "
         >
-          {StaggeredText("Sazzad Alam Tomal",15)}
+          {StaggeredText("Sazzad Alam Tomal",15,"slide-in")}
         </motion.h1>
         <motion.h2
         className="relative z-30 text-sm md:text-lg"

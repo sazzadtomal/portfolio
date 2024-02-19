@@ -28,20 +28,11 @@ const Introduction = () => {
  
   const [isHovering,setHovering]=useState("frontend")
 
-  console.log("rerendering expertise")
-
 
   return (
-    <motion.div
-
-    initial={{opacity:0,y:100}}
-    animate={{opacity:1,y:0}}
-    transition={{duration:1,delay:0.50}}
-    
-    
-    className="w-full m-auto mt-24">
-      <h2 className="text-center text-xl mb-16 text-[#E0D2C7]">Expertise in a Glance.</h2>
-      <div className="flex flex-col md:flex-row border border-[#E0D2C7]  ">
+    <motion.div initial={{opacity:0}} whileInView={{opacity:0.95}} transition={{duration:2}} className=" relative flex flex-col p-8 overflow-hidden my-16">
+      <h2 className="text-center text-xl mb-8 text-[#E0D2C7]">Expertise in a Glance.</h2>
+      <div className="flex flex-col md:flex-row border border-[#E0D2C7] rounded-lg overflow-hidden my-8 ">
         <div className="flex flex-col justify-between md:max-w-[50%] basis-1/2 bg-[#20242D] text-[#E0D2C7]  px-2 py-8 md:p-16">
           <ul className="md:[&>*]:p-4 [&>*]:px-6 [&>*]:py-4 [&>*]:rounded-2xl flex flex-wrap md:block justify-center items-center">
             <li className="hover:border border-[#E0D2C7]  transition" onMouseOver={()=>setHovering("frontend")}>Frontend</li>
@@ -51,7 +42,7 @@ const Introduction = () => {
             <li className="hover:border border-[#E0D2C7]  transition" onMouseOver={()=>setHovering("testing")}>Testing</li>
           </ul>
         </div>
-        <div className="flex flex-col justify-center basis-1/2 md:max-w-[50%] pl-4 p-2 md:p-16 py-8 sky">
+        <div className="flex flex-col justify-center basis-1/2 md:max-w-[50%] pl-4 p-2 md:p-16 py-8 bg-[#E0D2C7]">
           <motion.ul>
           {objectMap[isHovering].map((item,index)=>(<motion.li key={item} initial={{opacity:0}} viewport={{once:true}} whileInView={{opacity:1}} transition={{duration:0.7,delay:index*0.1}}   className="mb-2">{item}</motion.li>))}
           </motion.ul>

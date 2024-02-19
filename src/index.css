@@ -26,6 +26,14 @@ body{
 
 }
 
+
+.backface-invisible {
+  backface-visibility: hidden;
+}
+
+
+
+
 .background{
   /* background-color: #D8E1E9;
   background: rgb(68,176,158);
@@ -80,6 +88,7 @@ img{display: inline-block;}
     display: inline-block;
     animation: 8s slide infinite linear;
   }
+
 
 
 

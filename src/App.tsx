@@ -1,8 +1,6 @@
 import Navbar from "./Components/Navbar"
-import Hero from "./Components/Hero"
-import Introduction from "./Components/Introduction"
-import Education from "./Components/Education"
 import { useState } from "react"
+import { Outlet } from "react-router-dom"
 
 
 
@@ -16,11 +14,8 @@ function App() {
  
      <div>
         <Navbar showName={heroView}/>
-        <main className="w-[90%] md:w-[80%] m-auto py-16">
-          <Hero setView={(status)=>setHeroView(status)}/>
-          <Introduction/>
-          <Education/>
-         
+        <main className=" py-16 md:py-20">
+           <Outlet/>
         </main>
      </div>
 
