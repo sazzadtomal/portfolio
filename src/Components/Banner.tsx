@@ -16,7 +16,7 @@ const Banner = ({title}:Props) => {
         initial={{opacity: 0.5 }}
         animate={{opacity: 1 }}
         transition={{ duration: 1 }}
-        className="origin-left mt-24 mb-28 lg:mt-48 lg:mb-52"
+        className="origin-left mt-24 mb-28 md:mt-36 md:mb-40 lg:mt-48 lg:mb-52"
       >
         <motion.h1
           key="intro"
