@@ -1,7 +1,7 @@
 import AnimatedHero from "../Components/AnimatedHero"
 import Design from "../Components/Design"
-import Education from "../Components/Education"
 import Introduction from "../Components/Introduction"
+import Development from "../Components/Development"
 
 
 const Home = () => {
@@ -10,7 +10,8 @@ const Home = () => {
               <AnimatedHero/>
               <Design/>
               <Introduction/>
-              <Education/>
+              <Development/>
+
           </div>
   )
 }

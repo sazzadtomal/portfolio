@@ -1,6 +1,7 @@
 import Navbar from "./Components/Navbar"
 import { useState } from "react"
 import { Outlet } from "react-router-dom"
+import Footer from "./Components/Footer"
 
 
 
@@ -14,9 +15,10 @@ function App() {
  
      <div>
         <Navbar showName={heroView}/>
-        <main className=" py-16 md:py-20">
+        <main className=" pt-16 md:pt-20">
            <Outlet/>
         </main>
+        <Footer/>
      </div>
 
 

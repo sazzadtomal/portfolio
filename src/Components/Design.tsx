@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion'
 import staggeredText from '../Utilities/StaggeredText'
-import { CiCircleMinus } from "react-icons/ci";
-import { CiCirclePlus } from "react-icons/ci";
 import { useState } from 'react';
 import Alchemy from './Alchemy';
 import { Link } from 'react-router-dom';
@@ -14,16 +12,12 @@ import { Link } from 'react-router-dom';
 
 const Design = () => {
 
-  const [size,changeSize]=useState(4)  
   const [subtle,changeSubtle]=useState(1)  
   
-  console.log(size)
-
-
 
 
   return (
-    <motion.div initial={{opacity:0,scale:0}} animate={{opacity:0.95,scale:1}} transition={{duration:1,delay:3}} className="origin-left relative flex flex-col p-8 overflow-hidden bg-[#E0D2C7] my-16">
+    <motion.div initial={{opacity:0,scale:0}} animate={{opacity:0.95,scale:1}} transition={{duration:1,delay:3}} className="origin-left relative flex flex-col p-8 overflow-hidden bg-[#E0D2C7] mt-16">
         <div className='flex flex-col'>
             <h2>Design</h2>
                <div className='flex'>
@@ -37,7 +31,7 @@ const Design = () => {
 
                 <div className='flex flex-col lg:text-center my-16 lg:my-8'>
                     <motion.section initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1}} className='lg:w-1/2 lg:mx-auto lg:px-32 mb-16 '>
-                        <h3 key={size} className={`text-xl md:text-4xl mb-4 font-bold`}>"Responsive"</h3>
+                        <h3  className={`text-xl md:text-4xl mb-4 font-bold`}>"Responsive"</h3>
                         <p>Screens shift, site adjusts! Responsive magic adapts content to phones, tablets, laptops, no zoom required. Seamless flow, effortless navigation, happy users, sky-high engagement. The future of browsing, accessible to all.</p>
                     </motion.section>
                     <motion.div initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1.5}} className='flex flex-col lg:flex-row'>
