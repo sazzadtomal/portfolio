@@ -73,7 +73,7 @@ const Navbar = ({ showName }: Props) => {
           transition={{ duration: 1, delay: 1 }}
         >
           <NavLink to="/about">
-            <span>Projects</span>
+            <span>About</span>
             {pathname === "/about" && (
               <motion.div initial={{scaleX:0}} animate={{scaleX:1}} transition={{delay:1}} className="w-full bg-[#E0D2C7] h-[2px]"></motion.div>
             )}
