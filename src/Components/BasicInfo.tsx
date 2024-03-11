@@ -10,7 +10,7 @@ const BasicInfo = () => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 4, duration: 1 }}
+      transition={{ delay: 5.5, duration: 1 }}
       className="mt-16 border border-[#20242D] xl:mx-12"
     >
       <div className="bg-[#20242D] text-[#E0D2C7] xl:text-xl flex justify-between p-2">

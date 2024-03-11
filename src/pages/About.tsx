@@ -11,7 +11,7 @@ const About = () => {
       <motion.div
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 1 }}
-        transition={{ delay: 2, duration: 1.5 }}
+        transition={{ delay: 2, duration: 2.5 }}
         className="p-8 origin-top bg-[#E0D2C7] "
       >
         <AnimatedSection/>
