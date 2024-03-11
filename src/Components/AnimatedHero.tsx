@@ -40,7 +40,7 @@ const AnimatedHero = () => {
 
   
   return (
-    <motion.div className="relative h-[68vh] flex flex-col justify-center items-center px-8 md:px-16 xl:px-32 text-[#E0D2C7] mb-24 lg:mb-20 overflow-hidden">
+    <motion.div className="relative h-[58vh] lg:h-[60vh] flex flex-col justify-center items-center px-8 md:px-16 xl:px-32 text-[#E0D2C7] mb-24 lg:mb-20 overflow-hidden">
      {heading ?<motion.h1 
         key="intro"
         initial="hidden"

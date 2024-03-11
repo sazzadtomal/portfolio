@@ -1,10 +1,9 @@
-import useMousePosition from "../Utilities/useMousePosition"
+
 import {motion} from "framer-motion"
-import { useState } from "react"
 
 const Alchemy = () => {
 
-  const {x,y}=useMousePosition()
+ 
 
 
 

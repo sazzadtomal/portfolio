@@ -30,11 +30,11 @@ const Design = () => {
                 </div>
 
                 <div className='flex flex-col lg:text-center my-16 lg:my-8'>
-                    <motion.section initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1}} className='lg:w-1/2 lg:mx-auto lg:px-32 mb-16 '>
+                    <motion.section initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{delay:0.75,duration:1}} className='lg:w-1/2 lg:mx-auto lg:px-32 mb-16 '>
                         <h3  className={`text-xl md:text-4xl mb-4 font-bold`}>"Responsive"</h3>
                         <p>Screens shift, site adjusts! Responsive magic adapts content to phones, tablets, laptops, no zoom required. Seamless flow, effortless navigation, happy users, sky-high engagement. The future of browsing, accessible to all.</p>
                     </motion.section>
-                    <motion.div initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1.5}} className='flex flex-col lg:flex-row'>
+                    <motion.div initial={{y:20,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1.5,delay:0.25}} className='flex flex-col lg:flex-row'>
 
                         <Alchemy/>
 
