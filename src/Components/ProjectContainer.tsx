@@ -15,7 +15,7 @@ const ProjectContainer = () => {
                     <h3>Github: <a href="https://github.com/sazzadtomal/instasnap" className="link">https://github.com/sazzadtomal/instasnap</a></h3>
                     <h3>Tech: NextJS,React,Typescript,Appwrite</h3>
                 </div>
-                <a className="hidden md:block mt-8" href="https://instasnap-alpha.netlify.app/sign-in" title="https://instasnap-alpha.netlify.app/sign-in">Live Link</a>
+                <a className="hidden md:block mt-8" href="https://instasnap-alpha.netlify.app/sign-in" target="_blank" rel="noopener noreferrer" title="https://instasnap-alpha.netlify.app/sign-in" >Live Link</a>
                 <div className='hidden flex-col gap-1 w-1/5 md:flex'>
                          <span className='w-full bg-[#20242D] rounded-xl h-[1px] block'></span>
                          <span className='w-[80%] bg-[#20242D] rounded-xl h-[1px] block'></span>
@@ -30,7 +30,7 @@ const ProjectContainer = () => {
                     <motion.img initial={{opacity:0,y:20,filter:"blur(5px)"}} animate={{opacity:1,y:0,filter:"blur(0px)"}} transition={{duration:0.5,delay:3}} onLoad={()=>setLoaded(true)} className={`transition-all ${loaded ? "opacity-100": "opacity-0"} w-full hover:opacity-9 absolute top-[-4px] `} src={instaSnap} alt="" />
                     <motion.img initial={{opacity:0,y:20,filter:"blur(5px)"}} animate={{opacity:1,y:0,filter:"blur(0px)"}} transition={{duration:0.5,delay:3.5}} onLoad={()=>setLoaded(true)} className={`transition-all ${loaded ? "opacity-100": "opacity-0"} w-full hover:opacity-9`} src={instaSnap} alt="" />
                 </div>
-                <a className="md:hidden mt-6 block" href="https://instasnap-alpha.netlify.app/sign-in" title="https://instasnap-alpha.netlify.app/sign-in">Live Link</a>
+                <a  className="md:hidden mt-6 block"  href="https://instasnap-alpha.netlify.app/sign-in" target="_blank" rel="noopener noreferrer" title="https://instasnap-alpha.netlify.app/sign-in">Live Link</a>
                 <div className='flex flex-col gap-1 md:hidden'>
                          <span className='w-full bg-[#20242D] rounded-xl h-[1px] block'></span>
                          <span className='w-[80%] bg-[#20242D] rounded-xl h-[1px] block lg:mx-auto'></span>
