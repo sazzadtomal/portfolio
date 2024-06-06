@@ -26,8 +26,8 @@ const ProjectContainer = () => {
                     {!loaded && <div className="w-full absolute flex justify-center items-center">
                         <div className="loader"></div>
                     </div>}
-                    <motion.img initial={{opacity:0,y:20,filter:"blur(5px)"}} animate={{opacity:1,y:0,filter:"blur(0px)"}} transition={{duration:0.5,delay:2.5}} onLoad={()=>setLoaded(true)} className={`transition-all ${loaded ? "opacity-100": "opacity-0"} w-full hover:opacity-9 absolute top-[-8px]`} src={instaSnap} alt="" />
-                    <motion.img initial={{opacity:0,y:20,filter:"blur(5px)"}} animate={{opacity:1,y:0,filter:"blur(0px)"}} transition={{duration:0.5,delay:3}} onLoad={()=>setLoaded(true)} className={`transition-all ${loaded ? "opacity-100": "opacity-0"} w-full hover:opacity-9 absolute top-[-4px] `} src={instaSnap} alt="" />
+                    <motion.img initial={{opacity:0,y:20,filter:"blur(5px)"}} animate={{opacity:1,y:0,filter:"blur(0px)"}} transition={{duration:0.5,delay:2.5}}  className={`transition-all ${loaded ? "opacity-100": "opacity-0"} w-full hover:opacity-9 absolute top-[-8px]`} src={instaSnap} alt="" />
+                    <motion.img initial={{opacity:0,y:20,filter:"blur(5px)"}} animate={{opacity:1,y:0,filter:"blur(0px)"}} transition={{duration:0.5,delay:3}}  className={`transition-all ${loaded ? "opacity-100": "opacity-0"} w-full hover:opacity-9 absolute top-[-4px] `} src={instaSnap} alt="" />
                     <motion.img initial={{opacity:0,y:20,filter:"blur(5px)"}} animate={{opacity:1,y:0,filter:"blur(0px)"}} transition={{duration:0.5,delay:3.5}} onLoad={()=>setLoaded(true)} className={`transition-all ${loaded ? "opacity-100": "opacity-0"} w-full hover:opacity-9`} src={instaSnap} alt="" />
                 </div>
                 <a  className="md:hidden mt-6 block"  href="https://instasnap-alpha.netlify.app/sign-in" target="_blank" rel="noopener noreferrer" title="https://instasnap-alpha.netlify.app/sign-in">Live Link</a>
